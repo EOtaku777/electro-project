@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Электрощит Проект</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Проектирование электрощита</h1>
+        
+        <div class="card">
+            <h2>Расчёт нагрузки</h2>
+            <input type="number" id="power" placeholder="Мощность (кВт)" step="0.1">
+            <button onclick="calculate()">Рассчитать ток</button>
+            <div id="result"></div>
+        </div>
+        
+        <div class="card">
+            <h2>Доступное оборудование</h2>
+            <div id="equipment-list"></div>
+        </div>
+        
+        <div class="card">
+            <h2>Мой щит</h2>
+            <div id="shield"></div>
+            <button onclick="generateEstimate()">Сформировать смету</button>
+            <pre id="estimate"></pre>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
